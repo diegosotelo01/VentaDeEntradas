@@ -1,12 +1,14 @@
 package com.mycompany.ventadeentradas.model;
 
+import java.util.Date;
+
 public class Concierto {
 
     private String nombre;
-    private String fecha;
+    private Date fecha;
     private Usuario usuario;
 
-    public Concierto(String nombre, String fecha, Usuario usuario) {
+    public Concierto(String nombre, Date fecha, Usuario usuario) {
         this.nombre = nombre;
         this.fecha = fecha;
         this.usuario = usuario;
