@@ -10,6 +10,9 @@ public class Entrada {
         this.estado = estado;
     }
 
-    public boolean vender() {return false;}
+    public boolean vender() throws EntradaNoDisponibleException{
+        if(estado.equals("vendido")) throw new EntradaNoDisponibleException("La entrada ya ha sido vendida");
+        return false;
+    }
     public boolean liberar() {return false;}
 }
