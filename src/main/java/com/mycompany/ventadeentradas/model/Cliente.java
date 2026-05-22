@@ -15,5 +15,7 @@ public class Cliente extends Persona {
         this.ventas = new ArrayList<>();
     }
 
-    private void ingresar(String usuario, String clave) {}
+    private void ingresar(String usuario, String clave) throws CredencialesInvalidasException{
+        if(usuario==null || clave == null) throw new CredencialesInvalidasException("Usuario o clave incorrectos");
+    }
 }
