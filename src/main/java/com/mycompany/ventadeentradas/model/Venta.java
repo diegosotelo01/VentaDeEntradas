@@ -1,13 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.ventadeentradas.model;
 
-/**
- *
- * @author flowxy
- */
+import java.util.Date;
+
 public class Venta {
-    
+
+    private Date fecha;
+    private int monto;
+
+    public Venta(Date fecha, int monto) {
+        this.fecha = fecha;
+        this.monto = monto;
+    }
+
+    public boolean anular() {return false;}
 }
