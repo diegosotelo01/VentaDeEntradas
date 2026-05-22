@@ -13,5 +13,8 @@ public class Zona {
     }
     private boolean generarEntradas() {return false;}
     public Entrada[] mostrarEntrada() {return null;}
-    public Entrada[] venderEntrada(int numero) {return null;}
+    public Entrada[] venderEntrada(int numero) throws CantidadInvalidaException {
+        if(numero<1 || numero >4) throw new CantidadInvalidaException("Solo se puede comprar entre 1 y 4 entradas");
+        return null;
+    }
 }
